@@ -28,10 +28,10 @@
 body
 {
     background: url('images/fond4.jpg');
-   background-size: 20%;
-background-size: 3.2em;
-background-size: 12px;
-background-size: auto;
+    background-size: 20%;
+    background-size: 3.2em;
+    background-size: 12px;
+    background-size: auto;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
