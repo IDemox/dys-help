@@ -4,25 +4,27 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css" />
         <title>DYS HELP_SITE WEB</title>
+        <script src="script.js"></script>
     </head>
+    
     
     <body>
         <div id="bloc_page">
             <header>
                 <div id="titre_principal">
                     <div id="logo">
-                        <img src="images/logo.png" alt="Logo dyshelp" />
-                        <h1>DYSHELP</h1>    
+                        <img src="images/logo2.png" alt="Logo dyshelp" />
+                        <h1>DYS-HELP</h1>    
                     </div>
-                    <h2>Tous ce que faut savoir sur les troubles "dys"</h2>
+                    <h2>Les solutions pour les troubles "dys"</h2>
                 </div>
                 
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="outils.html">Outils</a></li>
+                        <li><a href="Acceuil.html">Accueil</a></li>
+                        <li><a href="outils.html">Outils"DYS"</a></li>
                         <li><a href="transcription.html">Transcription</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -34,21 +36,21 @@
             </div>
             
             <section>
-              <center><label for="avatar">Choose a profile picture:</label>
+                <center><p> Ceci est tout simplement un modificateur de fichier PDF normaux en document adapté aux handicap des troubles "dys". Pour se faire, suivre les intructions :</p></center><br/>
+                
+            </section>
+            <br/><BR/><center><label for="avatar">inserez votre fichier:</label>
 
 <input type="file"
        id="avatar" name="avatar"
-       accept=".pdf"></center>
-                <embed src="7254159.pdf" width="800px" height="2100px" />
-                <aside>
-                    <h1>À propos des auteurs</h1>
-
-                    <p id="photo_equipe"><img src="images/zozor_classe.png" alt="Photo de l'equipe" /></p>
-                    <p>Laisse-moi le temps de me présenter&nbsp;: je m'appelle Zozor, je suis né un 23 novembre 2005.</p>
-                    <p>Bien maigre, n'est-ce pas ? C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie afin que vous sachiez qui je suis réellement.</p>
-                   
-                </aside>
-            </section>
+       accept=".pdf"></center><br/><br/>
+   <?php 
+          include("intruphp.php"); 
+        ?>
+         
+            <form action="https://google.com">
+        <center><input type="submit" value="transcrire le fichier" />
+    </center></form>
             
             <footer>
                 

@@ -27,7 +27,11 @@
 
 body
 {
-    background: url('images/fond1.jpg');
+    background: url('images/fond4.jpg');
+   background-size: 20%;
+background-size: 3.2em;
+background-size: 12px;
+background-size: auto;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
@@ -48,7 +52,7 @@ section h1, footer h1, nav a
 
 header
 {
-    background: url('images/separateur.png') repeat-x bottom;
+    background: url('images/separateurs.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -122,7 +126,7 @@ nav a:hover
     margin-top: 15px;
     height: 200px;
     border-radius: 5px;
-    background: url('images/sanfrancisco.jpg') no-repeat;
+    background: url('images/ban2.png') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -143,26 +147,7 @@ nav a:hover
     
 }
 
-.bouton_rouge
-{
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    background: url('images/fond_degraderouge.png') repeat-x;
-    border: 1px solid #760001;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 3px 8px 0px 8px;
-    color: white;
-    text-decoration: none;
-}
 
-.bouton_rouge img
-{
-    border: 0;
-}
 
 /* Corps */
 
@@ -197,7 +182,7 @@ article p
 aside
 {
     flex: 1.2;
-    position: relative;
+    position: static;
     background-color: #706b64;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
@@ -206,84 +191,10 @@ aside
     font-size: 0.9em;
 }
 
-#fleche_bulle
-{
-    position: absolute;
-    top: 100px;
-    left: -12px;
-}
 
-#photo_zozor
-{
-    text-align: center;
-}
 
-#photo_zozor img
-{
-    border: 1px solid #181818;
-}
 
-aside img
-{
-    margin-right: 5px;
-}
+
 
 /* Footer */
 
-footer
-{
-    display: flex;
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
-    padding-top: 25px;
-}
-
-footer p, footer ul
-{
-    font-size: 0.8em;
-}
-
-footer h1
-{
-    font-size: 1.1em;
-}
-
-
-#tweet
-{
-    width: 28%;
-}
-
-#mes_photos
-{
-    width: 35%;
-}
-
-#mes_amis
-{
-    width: 31%;
-}
-
-#mes_photos img
-{
-    border: 1px solid #181818;
-    margin-right: 2px;
-}
-
-#listes_amis
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-}
-
-#mes_amis ul
-{
-    list-style-image: url('images/ico_liensexterne.png');
-    padding-left: 2px;
-}
-
-#mes_amis a
-{
-    text-decoration: none;
-    color: #760001;
-}
