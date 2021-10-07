@@ -51,6 +51,28 @@
              </div>
             </center><br/>
             
+
+
+
+
+
+
+            <div id="mytxt" contenteditable="true">
+                Hello, my name is <span style="color: blue;">Bob</span>
+                and I have a friend name <span style="color: green;">Joe</span>.
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
             
             <center><input id="clickMe" type="button" value="Transcrire le fichier" onclick="init();" />
 
@@ -67,6 +89,42 @@
 
     
             </script>
+             <form id="labnol" method="get" action="http://www.labnol.org/%22%3E
+            <div class="speech">
+            <input type="text" name="s" id="transcript" placeholder="Say Something"/>
+        <img onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" />
+      </div>
+    </form>
+             <script>
+
+      function startDictation() {
+
+        if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+          recognition.lang = "fr-FR";
+          recognition.start();
+
+          recognition.onresult = function (e) {
+            document.getElementById('transcript').value = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('labnol').submit();
+          };
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+        }
+      }
+
+    </script>
+
+            
+
+
+
             <footer>
                 
                 <div id="tweet">
