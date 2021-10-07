@@ -43,9 +43,7 @@
             <br/><BR/><center><label for="avatar">inserez votre fichier:</label>
 
             <input type="file" id="avatar" name="avatar" accept=".pdf"></center><br/><br/>
-            <center> <p>Entrez/Collez votre document ici:</p>
-             <textarea id="content" cols="60" rows="10">
-            </textarea>
+            <center><textarea placeholder="Entrez/Collez votre document ici:" id="content" cols="60" rows="10"></textarea>
             <div class="transcription-orientation">
             <span>Transcription orientation:</span>
             <label><input type="radio" name="orientation" value="Dyslexie" checked>Dyslexie</label>
@@ -54,12 +52,12 @@
             </center><br/>
             
             
-            <center><input id="clickMe" type="button" value="Transcrire le fichier" onclick="doFunction();" />
+            <center><input id="clickMe" type="button" value="Transcrire le fichier" onclick="init();" />
 
             </center><BR/><BR/>
             <script> 
               
-            document.getElementById("clickMe").onclick = function () { alert('Voici le fichier transcrit'); };
+            document.getElementById("clickMe").onclick = function() { alert('Voici le fichier transcrit'); };
               
                 var el = document.getElementById("clickMe");
             if (el.addEventListener)
