@@ -5,13 +5,13 @@
 
  @font-face {
     font-family: Delicious;
-    src: url("../dys-help/polices/OpenDyslexic-Regular.otf") format("opentype");
+    src: url("../dys-help/OpenDyslexic-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: Delicious;
     font-weight: bold;
-    src: url("../dys-help/polices/OpenDyslexic-Bold.otf") format("opentype");
+    src: url("../dys-help/OpenDyslexic-Bold.otf") format("opentype");
 }
 /* Eléments principaux de la page */
 
