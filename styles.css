@@ -1,7 +1,18 @@
-/* Définition des polices personnalisées */
+/* Définition des polices personnalisées 
 
  @font-face { font-family: Delicious; src: local('OpenDyslexic-Regular.otf'); }
- @font-face { font-family: Delicious; font-weight: bold; src: local('OpenDyslexic-Bold.otf');}
+ @font-face { font-family: Delicious; font-weight: bold; src: local('OpenDyslexic-Bold.otf');}*/
+
+ @font-face {
+    font-family: Delicious;
+    src: url("polices/OpenDyslexic-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Delicious;
+    font-weight: bold;
+    src: url("polices/OpenDyslexic-Bold.otf") format("opentype");
+}
 /* Eléments principaux de la page */
 
 body
