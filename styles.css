@@ -223,7 +223,7 @@ footer h1
     width: 35%;
 }
 
-#mes_amis
+#l_equipe
 {
     width: 31%;
 }
@@ -234,20 +234,20 @@ footer h1
     margin-right: 2px;
 }
 
-#listes_amis
+#Equipe
 {
     display: flex;
     justify-content: space-between;
     margin-top: 0;
 }
 
-#mes_amis ul
+#l_equipe ul
 {
     list-style-image: url('images/ico_liensexterne.png');
     padding-left: 2px;
 }
 
-#mes_amis a
+#l_equipe a
 {
     text-decoration: none;
     color: #760001;
