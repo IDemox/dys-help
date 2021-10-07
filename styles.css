@@ -5,7 +5,7 @@
 
  @font-face {
     font-family: Delicious;
-    src: url("../dys-help/OpenDyslexic-Regular.otf") format("opentype");
+    src: url("OpenDyslexic-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: Delicious-Bold;
     font-weight: bold;
-    src: url("../dys-help/OpenDyslexic-Bold.otf") format("opentype");
+    src: url("OpenDyslexic-Bold.otf") format("opentype");
 }
 /* Eléments principaux de la page */
 
