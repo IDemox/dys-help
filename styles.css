@@ -223,7 +223,7 @@ footer h1
     width: 35%;
 }
 
-#équipe
+#mes_amis
 {
     width: 31%;
 }
@@ -234,7 +234,7 @@ footer h1
     margin-right: 2px;
 }
 
-#Equipe
+#listes_amis
 {
     display: flex;
     justify-content: space-between;
