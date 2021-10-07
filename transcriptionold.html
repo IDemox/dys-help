@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css" />
-        <title>DYS HELP_SITE WEB</title>
+        <title>Dys-Help</title>
         <script src="script.js"></script>
     </head>
     
@@ -37,30 +37,22 @@
             
             <section>
                 <center><p> Voici un outil qui vous permettra de retranscrire vos documents (PDF, DOCX, etc.) en un document avec une police, taille de police et couleur de police bien plus lisible. Pour se faire, importez votre document puis cliquez sur "Transcrire".</p></center><br/>
-            
+                
             </section>
             <br/><BR/><center><label for="avatar">inserez votre fichier:</label>
 
             <input type="file" id="avatar" name="avatar" accept=".pdf"></center><br/><br/>
-            <center> <p>Entrez/Collez votre document ici:</p>
-             <textarea id="content" cols="60" rows="10">
-            </textarea>
-            <div class="transcription-orientation">
-            <span>Transcription orientation:</span>
-            <label><input type="radio" name="orientation" value="Dyslexie" checked>Dyslexie</label>
-            <label><input type="radio" name="orientation" value="Dyscalculie">Dyscalculie</label>
-             </div>
-            </center><br/>
+            <embed src=http://monsite.fr/monfichier.pdf width=800 height=500 type='application/pdf'/>
             
             
             <center><input id="clickMe" type="button" value="transcrire le fichier" onclick="doFunction();" />
 
-            </center><BR/><BR/>
+            </center>
             <script> 
               
             document.getElementById("clickMe").onclick = function () { alert('Afficher le fichier converti'); };
               
-                var el = document.getElementById("clickMe");
+            var el = document.getElementById("clickMe");
             if (el.addEventListener)
                 el.addEventListener("click", doFunction, false);
             else if (el.attachEvent)
