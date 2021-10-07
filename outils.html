@@ -1,73 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Dys-Help</title>
-        <link rel="icon" type="image/png" sizes="16x16" href="images/logo2.png">
-    </head>
-    
-    <body>
-        <div id="bloc_page">
-            <header>
-                <div id="titre_principal">
-                    <div id="logo">
-                        <img src="images/logo2.png" alt="Logo dyshelp" />
-                        <h1>DYS-HELP</h1>    
-                    </div>
-                    <h2>Les solutions pour les troubles "dys"</h2>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DYS HELP_SITE WEB</title>
+    <script src="outils.mjs"></script>
+</head>
+
+<body>
+    <div id="bloc_page">
+        <header>
+            <div id="titre_principal">
+                <div id="logo">
+                    <img src="images/logo2.png" alt="Logo dyshelp" />
+                    <h1>DYS-HELP</h1>
                 </div>
-                
-                <nav>
+                <h2>Les solutions pour les troubles "dys"</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="outils.html">Outils"DYS"</a></li>
+                    <li><a href="transcription.html">Transcription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="banniere_image">
+            <div id="banniere_description">
+
+            </div>
+        </div>
+
+        <section>
+            <center>
+                <div id="searchbar">
+
+                    <h1>QU'EST CE QUE VOUS VOULEZ CHERCHER?</h1>
+                    <form action="" class="formulaire">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Chercher votre outil..">
+
+                        <ul id="myUL">
+                            <li><a href="https://www.zoomtext.com/zoomtext-fusion-info-fr/" target="_blank"><p class="listTitre">Zoomtext</p><i>Logiciel de grossissement de caractères</i></a></li>
+                            <li><a href="https://www.clarosoftware.com/portfolio/screenruler-for-pc/" target="_blank"><p class="listTitre">Clarosoftware</p><i>Aide lecture en coloriant l’écran</i></a></li>
+                            <li><a href="https://www.lexidys.com/predicteur-correcteur-et-lecteur-alinea.html" target="_blank"><p class="listTitre">Alinea</p><i>Édicteur, correcteur et lecteur de documents</i></a></li>
+                            <li><a href="https://www.lexidys.com/exam-reader-c-pen.html" target="_blank"><p class="listTitre">Stylo numérique</p><i>Stylo numérique avec synthèse vocale de grande qualité.</i></a></li>
+
+                            <li><a href="https://www.lexidys.com/omnipage-ultimate-ocr.html" target="_blank"><p class="listTitre">Omnipage Ultimate</p><i>Logiciel de reconnaissance de caractères: texte éditable, modifiable et oralisable par tout logiciel de synthèse vocale.</i></a></li>
+                            <li><a href="https://www.lexidys.com/antidote-correction-orthographe-grammaire.html" target="_blank"><p class="listTitre">Antidote</p><i>Correction orthographique et grammaticale du texte, et accès aux dictionnaires de définition ou de synonymes</i></a></li>
+                            <li><a href="https://www.lexidys.com/wordq-support-ecrit.html" target="_blank"><p class="listTitre">WordQ</p><i>Outil de prédiction de mots qui s'adapt au traitement de texte habituel</i></a></li>
+                        </ul>
+
+                        <script>
+
+                            function myFunction() {
+                                // Declare variables
+                                var input, filter, ul, li, a, i, txtValue;
+                                input = document.getElementById('myInput');
+                                filter = input.value.toUpperCase();
+                                ul = document.getElementById("myUL");
+                                li = ul.getElementsByTagName('li');
+
+                                // Loop through all list items, and hide those who don't match the search query
+                                for (i = 0; i < li.length; i++) {
+                                    a = li[i].getElementsByTagName("a")[0];
+                                    txtValue = a.textContent || a.innerText;
+                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        li[i].style.display = "";
+                                    } else {
+                                        li[i].style.display = "none";
+                                    }
+                                }
+                            }
+
+                        </script>
+
+                        <p></p>
+
+                    </form>
+                </div>
+            </center>
+
+        </section>
+
+        <footer>
+
+            <div id="tweet">
+                <h1>Mon dernier tweet</h1>
+                <p>Hii haaaaaan !</p>
+                <p>le 12 mai à 23h12</p>
+            </div>
+            <div id="mes_photos">
+                <h1>Mes photos</h1>
+                <p><img src="images/photo1.jpg" alt="Photographie" /><img src="images/photo2.jpg"
+                        alt="Photographie" /><img src="images/photo3.jpg" alt="Photographie" /><img
+                        src="images/photo4.jpg" alt="Photographie" /></p>
+            </div>
+            <div id="mes_amis">
+                <h1>Mes amis</h1>
+                <div id="listes_amis">
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="outils.html">Outils"DYS"</a></li>
-                        <li><a href="transcription.html">Transcription</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Pupi le lapin</a></li>
+                        <li><a href="#">Mr Baobab</a></li>
+                        <li><a href="#">Kaiwaii</a></li>
+                        <li><a href="#">Perceval.eu</a></li>
                     </ul>
-                </nav>
-            </header>
-            
-            <div id="banniere_image">
-                <div id="banniere_description">
-                
+                    <ul>
+                        <li><a href="#">Belette</a></li>
+                        <li><a href="#">Le concombre masqué</a></li>
+                        <li><a href="#">Ptit prince</a></li>
+                        <li><a href="#">Mr Fan</a></li>
+                    </ul>
                 </div>
             </div>
-            
-            <section>
-  <center><div id="searchbar">
-                
-                        <h1>QUE VOULEZ VOUS CHERCHER?</h1>
-                <form action="" class="formulaire">
-               <input class="champ" type="text" value="Entrez votre recherche..."/>
-                    <input class="search" id="search" type="image" src='images/loupe1.png'value=" " />
-                     
-                </form>
-                </div></center>  
-               
-            </section>
-            
-            <footer>
-                
-                <div id="tweet">
-                    <h1>Dernière information :</h1>
-                    <p>La journée nationale des Dys a lieu le 10 Octobre.</p>
-                    <p>Le 08 Octobre 2021, à 10h30.</p>
-                </div>
-                
-                <div id="l_equipe">
-                    <h1>L'équipe :</h1>
-                    <div id="Equipe">
-                        <ul>
-                            <li><a href="#">Aurélien</a></li>
-                            <li><a href="#">Bakagnan</a></li>
-                            <li><a href="#">Nicolas</a></li>
-                            <li><a href="#">Crépin</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </footer>
-        </div>
-    </body>
+
+        </footer>
+    </div>
+</body>
+
 </html>
