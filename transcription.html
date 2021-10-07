@@ -41,24 +41,22 @@
             </section>
             <br/><BR/><center><label for="avatar">inserez votre fichier:</label>
 
-<input type="file"
-       id="avatar" name="avatar"
-       accept=".pdf"></center><br/><br/>
+            <input type="file" id="avatar" name="avatar" accept=".pdf"></center><br/><br/>
             <embed src=http://monsite.fr/monfichier.pdf width=800 height=500 type='application/pdf'/>
             
             
-        <center><input id="clickMe" type="button" value="transcrire le fichier" onclick="doFunction();" />
+            <center><input id="clickMe" type="button" value="transcrire le fichier" onclick="doFunction();" />
 
-    </center>
-          <script> 
+            </center>
+            <script> 
               
-document.getElementById("clickMe").onclick = function () { alert('Afficher le fichier converti'); };
+            document.getElementById("clickMe").onclick = function () { alert('Afficher le fichier converti'); };
               
-              var el = document.getElementById("clickMe");
-if (el.addEventListener)
-    el.addEventListener("click", doFunction, false);
-else if (el.attachEvent)
-    el.attachEvent('onclick', doFunction);
+            var el = document.getElementById("clickMe");
+            if (el.addEventListener)
+                el.addEventListener("click", doFunction, false);
+            else if (el.attachEvent)
+                el.attachEvent('onclick', doFunction);
 
     
             </script>
