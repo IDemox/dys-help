@@ -6,6 +6,8 @@
  @font-face {
     font-family: Delicious;
     src: url("../dys-help/OpenDyslexic-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
