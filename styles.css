@@ -33,7 +33,7 @@ body
 
 section h1, footer h1, nav a
 {
-    font-family: Delicious;
+    font-family: Delicious, Arial, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
 }
